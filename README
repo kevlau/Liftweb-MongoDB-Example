@@ -1,5 +1,7 @@
 Install Java, Simple Build Tool, and Git
 
+*Also you need a running MongoDB instance on localhost*
+
 Clone this repository with:
 
 git clone git@github.com:philip142au/Liftweb-MongoDB-Example.git
