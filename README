@@ -2,13 +2,16 @@ Install Java, Simple Build Tool, and Git
 
 Clone this repository with:
 
-?
+git clone git@github.com:philip142au/Liftweb-MongoDB-Example.git
 
-Then cd into lift_sbt_prototype and type:
+Then cd into the directory and type:
 sbt
 
 At the sbt prompt, type:
 update
+
+Then:
+compile
 
 Then:
 jetty-run
@@ -16,4 +19,4 @@ jetty-run
 Point your browser to:
 http://localhost:8080/
 
-Voila a running Lift app
+Voila a running Lift app, its Christmas time ! http://www.youtube.com/watch?v=ova2XZaKdGY
