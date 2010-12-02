@@ -1,0 +1,46 @@
+<div class="lift:surround?with=default;at=content">
+    <div class="lift:TD.list?all_id=all_todos">
+      <div id="all_todos">
+        <div>Exclude done <todo:exclude/></div>
+        <ul>
+          <todo:list>
+            <li>
+              <todo:check><input type="checkbox"/></todo:check>
+              <todo:priority>
+                <select><option>1</option></select>
+              </todo:priority>
+              <todo:desc>To Do</todo:desc>
+            </li>
+          </todo:list>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="list:TD.add?form=post">
+      <table>
+        <tr>
+          <td>Description:</td>
+          <td><todo:desc>To Do</todo:desc></td>
+        </tr>
+        <tr>
+          <td>
+            Priority
+          </td>
+          <td>
+            <todo:priority>
+              <select><option>1</option></select>
+            </todo:priority>
+          </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+            <todo:submit>
+              <button>New</button>
+            </todo:submit>
+          </td>
+        </tr>
+      </table>
+    </div>
+</div>

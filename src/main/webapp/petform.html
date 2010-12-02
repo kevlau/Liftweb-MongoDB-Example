@@ -1,0 +1,30 @@
+<div class="lift:surround?with=default;at=content">
+    <div>
+        <div class="lift:PetSnippet.show?form=post">
+            <!-- Two divs, show and edit, only one is displayed at a single time.
+                 Both divs are left here to allow the web developer to see and adjust the html.
+
+                 This is a easy way for the web developer to style the user interface. -->
+            <div id="show">
+                <table id="petTable"><tr><td>Pet name</td><td>Edit</td><td>Delete</td></tr></table>
+                <span>Add pet:</span><br />
+                <div id="addForm">
+                    <label for="addName">Pet name :</label><input id="addName"/><br />
+                    <label for="addAge">Pet age :</label><input id="addAge"/><br />
+                    <label for="addDescription">Pet description :</label><input id="addDescription"/><br />
+                    <input type="submit" value="submit"/>
+                </div>
+            </div>
+            <div id="edit">
+                <span>Edit pet:</span><br />
+                <div id="editForm">
+                    <label for="editName">Pet name :</label><input id="editName"/><br />
+                    <label for="editAge">Pet age :</label><input id="editAge"/><br />
+                    <label for="editDescription">Pet description :</label><input id="editDescription"/><br />
+                    <input type="submit" value="submit"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
