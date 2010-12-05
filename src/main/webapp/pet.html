@@ -1,0 +1,24 @@
+<div class="lift:surround?with=default;at=content">
+    <div>
+        <table>
+            <tr class="lift:PetSnippet.showAll">
+                <td class="petEdit">Edit link goes here</td>
+                <td class="petDelete">Delete link goes here</td>
+                <td class="petName">Pet name goes here</td>
+                <td class="petAge">Pet age goes here</td>
+            </tr>
+        </table>
+        <div class="lift:PetSnippet.paginate">
+            <!-- @todo How to fix this problem? http://groups.google.com/group/liftweb/browse_thread/thread/e59b17b55e0daaf -->
+            <nav:first /> | <nav:prev /> | <nav:allpages /> |  <nav:next /> | <nav:last /> | <nav:records />
+        </div>
+        <br />
+        <h3>Add pet:</h3>
+        <div id="editForm" class="lift:PetSnippet.editForm?form=post">
+            <label for="editName">Pet name :</label><input id="editName"/><br />
+            <label for="editAge">Pet age :</label><input id="editAge"/><br />
+            <label for="editDescription">Pet description :</label><input id="editDescription"/><br />
+            <input type="submit" value="submit"/>
+        </div>
+    </div>
+</div>
