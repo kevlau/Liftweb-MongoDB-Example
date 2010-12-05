@@ -18,10 +18,7 @@ import _root_.net.liftweb.mapper.view._
 import com.mongodb._
 
 class PetSnippet extends StatefulSnippet with PaginatorSnippet[Pet] {
-  // For pagination
-  val PAGE_SIZE = 5
 
-  // function show here matches the petform.html lift:PetSnippet.show
   var dispatch: DispatchIt = {
     case "showAll" => showAll _
     case "editForm" => editForm _
@@ -49,8 +46,8 @@ class PetSnippet extends StatefulSnippet with PaginatorSnippet[Pet] {
   }
 
   // This is related to PaginatorSnippet
-  override def count = Pet.findAll(QueryBuilder.start().get()).size
-  override def itemsPerPage = PAGE_SIZE
+  override def count = Pet.count
+  override def itemsPerPage = 5
 	override def page = Pet.findAll(QueryBuilder.start().get(), Limit(itemsPerPage), Skip(curPage*itemsPerPage))
 
   // Place this into a edit mode and store the pet which is being edited
